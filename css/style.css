@@ -1,0 +1,203 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #e2dedb;
+    font-family: 'Roboto', sans-serif;
+}
+#header {
+    padding: 0;      
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.menu {
+    height: 5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    border-radius: 5px;
+}
+.menu a {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 1.6rem;
+    font-weight: bolder;
+    transition: 0.2s;
+}
+.menu a:hover {
+    background: #8D4925;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 300px) {
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;    
+}
+.producto {    
+    margin: 0 auto;
+    width: 70%;
+    height: 50rem;    
+    display: flex;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;   
+}
+.producto img {
+    margin: 3rem;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 10px;
+}
+.producto h2 {
+    margin-top: 5rem;
+    font-size: 2.3rem;
+}
+h4,
+.ingredientes ul,
+.procedimiento ol {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+.video {
+    margin: 0 auto;
+    width: 70%;
+    height: 50rem;    
+    display: flex;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    flex-direction: column;
+}
+.video iframe {
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 18px 11px 45px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 18px 11px 45px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 18px 11px 45px 0px rgba(0,0,0,0.75);
+}
+
+.video audio {
+    margin: 2rem auto;
+    width: 720px;
+    border-radius: 4px;
+}
+.recetas {
+    width: 70%;
+    height: 50rem; 
+    margin: 5rem auto;
+}
+.recetas h2{
+    text-align: center;
+    font-size: 4rem;
+}
+.contenedor-grid {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.contenedor-grid a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+.contenedor-grid a:hover {
+    color: #8D4925;
+    scale: 1.2;
+}
+.contenedor-grid a img{
+    width: 250px;
+    height: 250px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.contenedor-grid a img:hover {
+    scale: 1.05;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    background-color: rgb(26, 26, 26);
+    height: 10rem;
+    color: white;
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center; 
+}
+
+.formulario {
+    padding: 4rem;
+    width: 120rem;
+    height: 50rem;    
+    margin: 10rem auto;
+    border: 2px solid  black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    margin: 14.5rem auto;
+}
+.formulario-contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 2rem auto;
+}
+.formulario-contenedor div input {
+    width: 555px;
+}
+.formulario-contenedor2 {
+    display: flex;
+    flex-direction: column;
+}
+.formulario-contenedor2 input {
+    margin-bottom: 3rem;
+}
+.formulario-boton {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 12rem;
+    height: 6rem;
+    background-color: #8D4925;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.formulario-boton:hover {
+    background-color: #d36b33;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
