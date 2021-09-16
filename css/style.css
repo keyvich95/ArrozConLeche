@@ -116,7 +116,10 @@ h4,
 }
 .contenedor-grid a:hover {
     color: #8D4925;
-    scale: 1.2;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .contenedor-grid a img{
     width: 250px;
@@ -125,7 +128,10 @@ h4,
     border-radius: 5px;
 }
 .contenedor-grid a img:hover {
-    scale: 1.05;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 .flex {
     display: flex;
