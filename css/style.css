@@ -114,7 +114,8 @@ body {
         flex-direction: column;
     }
     .video iframe {
-        width: 60%;
+        width: 720px;
+        height: 360px;
         margin: 2rem auto;
         border-radius: 5px;
         box-shadow: 18px 11px 45px 0px rgba(0,0,0,0.75);
@@ -136,14 +137,46 @@ body {
         text-align: center;
         font-size: 4rem;
     }
-    .contenedor-grid {
+    .cards-conteiner {        
         margin: 7rem auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 3rem;
+        display: flex;
+        height: 40rem;
+        width: 100%;
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
     }
+    .card {
+        height: 45rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .card p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;  
+    }
+    .card h5 {
+        height: 6rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        text-align: center;
+        color: #8D4925;        
+    } 
+    .card img {
+        transition: 0.2s;
+    }
+    .card img:hover{
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    .recetas h2 {
+        margin-top: 3rem;
+    }
+    /*
     .contenedor-grid a{
-        font-size: 1.4rem;
+        font-size: 1.4rem; 
         text-decoration: none;
         color: black;
         margin-top: 1rem;
@@ -167,7 +200,7 @@ body {
         -moz-transform: scale(1.05);
         -o-transform: scale(1.05);
         transform: scale(1.05);
-    }
+    } */
     .flex {
         display: flex;
         flex-direction: column;
@@ -229,7 +262,7 @@ body {
     }
     
 }
-@media (min-width: 368px) {
+@media (max-width: 768px) {
     main {
         text-align: center;
         justify-content: center;
@@ -283,7 +316,7 @@ body {
         -moz-transform: scale(1.1);
         -o-transform: scale(1.1);
         transform: scale(1.1);
-    }
+    }  
     footer {
         font-family: berllina;
         display: flex;
